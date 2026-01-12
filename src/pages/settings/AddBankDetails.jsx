@@ -1,4 +1,4 @@
-import React from "react";
+import qrImg from "../../assets/images/qr.png";
 
 export const AddBankDetails = () => {
   return (
@@ -10,6 +10,13 @@ export const AddBankDetails = () => {
           </div>
           <div className="form_content">
             <form action="" className="row gy-3 align-items-center ">
+              <div className="col-md-4">
+                <label htmlFor="" className="form-label">
+                  Upload a Qr Code
+                </label>
+
+                <input type="file" className="form-control" />
+              </div>
               <div className="col-md-4">
                 <label htmlFor="" className="form-label">
                   Bank Name
