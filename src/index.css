@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-straight/css/uicons-solid-straight.css");
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-straight/css/uicons-regular-straight.css");
+
+:root {
+  --public-sans-family: "Public Sans", sans-serif;
+  --heebo-family: "Heebo", sans-serif;
+  --gradient-color: linear-gradient(90deg, rgba(212, 72, 59, 1) 0%, rgba(181, 33, 20, 1) 50%, rgba(143, 12, 0, 1) 100%);
+  --main-color: rgba(143, 12, 0, 1);
+  --padding-manual: 50px 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: var(--public-sans-family) !important;
+  background: #fbfbfb !important;
+  overflow-x: hidden !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: none;
+  }
+
+  .invoice {
+    width: 210mm;
+    /* A4 width */
+    max-width: 210mm;
+    margin: auto;
+    font-family: "Roboto Slab", serif;
+    padding: 10mm;
+    box-sizing: border-box;
+  }
+
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

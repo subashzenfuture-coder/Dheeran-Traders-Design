@@ -1,0 +1,32 @@
+export const ProductData = [
+  {
+    id: 1,
+    serial_number: "203456",
+    product_name: "Rice Bundle",
+    product_brand: "Bullet Rice",
+    product_categorey: "Half Boil",
+    product_quantity: "25 Kg",
+    price: 1200,
+    stock: 100,
+  },
+  {
+    id: 2,
+    serial_number: "203456",
+    product_name: "Rice Bundle",
+    product_brand: "Bashmati Rice",
+    product_categorey: "Half Boil",
+    product_quantity: "25 Kg",
+    price: 1500,
+    stock: 80,
+  },
+  {
+    id: 3,
+    serial_number: "203456",
+    product_name: "Rice Bundle",
+    product_brand: "Ponni Rice",
+    product_categorey: "Full Boil",
+    product_quantity: "25 Kg",
+    price: 1600,
+    stock: 200,
+  },
+];

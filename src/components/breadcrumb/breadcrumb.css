@@ -1,0 +1,24 @@
+.breadcrumb-list .breadcrumb {
+  margin-bottom: 0px;
+}
+.breadcrumb-list .breadcrumb .breadcrumb-item {
+  font-size: 13px;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 5px;
+  color: #000;
+  margin-right: 15px;
+  position: relative;
+}
+.breadcrumb-list .breadcrumb .breadcrumb-item.active {
+  background: var(--gradient-color);
+  color: #fff;
+}
+.breadcrumb-list .breadcrumb .breadcrumb-item a {
+  color: #666;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  left: -10px;
+  position: absolute;
+}
