@@ -39,6 +39,7 @@ import { Settings } from "./pages/settings/Settings";
 import { BankDetails } from "./pages/settings/BankDetails";
 import { AddBankDetails } from "./pages/settings/AddBankDetails";
 import { BankDetailsList } from "./pages/settings/BankDetailsList";
+import { ProductBilling } from "./pages/billing/product-billing/ProductBilling";
 
 function App() {
   return (
@@ -50,7 +51,7 @@ function App() {
         <div className="dashboard_container">
           <Breadcrumb />
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="/" element={<ProductBilling />} />
             <Route path="/billing-dashboard" element={<Dashboard />} />
             <Route path="/chit-dashboard" element={<ChitDashboard />} />
 
@@ -69,26 +70,31 @@ function App() {
                 <Route path="add-stock" element={<AddStock />} />
               </Route>
             </Route>
+
             <Route path="customers" element={<Customers />}>
               <Route index element={<CustomerList />} />
               <Route path="add-customers" element={<AddCustomers />} />
               <Route path="customers-detail" element={<CustomerDetail />} />
             </Route>
+
             <Route path="vendors" element={<Vendors />}>
               <Route index element={<VendorList />} />
               <Route path="add-vendors" element={<AddVendors />} />
             </Route>
+
             <Route path="/report" element={<ReportLayout />}>
               <Route path="daily" element={<DailyReport />} />
               <Route path="weekly" element={<WeeklyReport />} />
               <Route path="monthly" element={<MonthlyReport />} />
             </Route>
+
             <Route path="/employee" element={<EmployeeLayout />}>
               <Route index element={<EmployeeList />} />
               <Route path="employee-list" element={<EmployeeList />} />
               <Route path="add-employee" element={<AddEmployee />} />
               <Route path="employee-detail" element={<EmployeeDetail />} />
             </Route>
+
             <Route path="/settings" element={<Settings />}>
               <Route index element={<UserProfile />} />
               <Route path="edit-profile" element={<UserProfile />} />

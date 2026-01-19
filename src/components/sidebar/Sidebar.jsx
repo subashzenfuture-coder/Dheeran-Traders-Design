@@ -81,7 +81,9 @@ export const Sidebar = () => {
             <span className="sidebar_icon">
               <i className="fi fi-tr-calculator-money"></i>
             </span>
-            <span className="sidebar_text">Billing</span>
+            <Link to="/" className="sidebar_text">
+              Billing
+            </Link>
             <i className="fi fi-tr-angle-small-down arrow"></i>
           </div>
 
@@ -213,7 +215,7 @@ export const Sidebar = () => {
                     <li className={isActive("/accounts/stock-maintanence", location.pathname) ? "active" : ""}>
                       <Link to="/accounts/stock-maintanence">
                         <span className="submenu_icon">
-                         <i class="fi fi-tr-shopping-cart"></i>
+                          <i class="fi fi-tr-shopping-cart"></i>
                         </span>
                         <span className="submenu_text">Stock Maintanence</span>
                       </Link>
